@@ -19,11 +19,13 @@ class AudioPlayer {
     audio.crossOrigin = 'anonymous';
     audio.loop = 'true';
     audio.src = songUrl;
+    console.log("audio"+songUrl);
     this.dancer.pause();
     this.dancer.load(audio);
   }
 
   play() {
+    console.log("play");
     this.dancer.play();
     const nowTime = Date.now();
     if (this.lastKickTime === -1) {
@@ -32,6 +34,7 @@ class AudioPlayer {
   }
 
   pause() {
+    console.log("pause");
     this.dancer.pause();
   }
 

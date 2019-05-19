@@ -87,3 +87,32 @@ body {
 .inactive {
   display: none !important;
 }
+
+#musicScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+section {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('https://media.giphy.com/media/Pk4X5UwDNf6sqaRmaS/giphy.gif');
+  flex-grow: 1;
+}
+
+
+footer {
+  font-size: 24px;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width:60px;
+  height:60px;
+}
