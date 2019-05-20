@@ -17,7 +17,7 @@ class GifDisplay {
 
   loadGif(){
     //console.log("ggggg"+this.inputValue);
-    this.url = "http://api.giphy.com/v1/gifs/search?q="+this.inputValue+"&api_key="+this.apiKey+"&limit=25";
+    this.url = "https://api.giphy.com/v1/gifs/search?q="+this.inputValue+"&api_key="+this.apiKey+"&limit=25";
     fetch(this.url)
         .then(this.onResponse)
         .then(this.onJsonReady);
